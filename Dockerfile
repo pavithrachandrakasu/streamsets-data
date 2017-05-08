@@ -1,6 +1,7 @@
 FROM alpine:3.4
 MAINTAINER Pavithra K C <Pavithra.KC@intlfcstone.com>
 
+#ARG SDC_URL=https://archives.streamsets.com/datacollector/2.4.1.0/tarball/streamsets-datacollector-core-2.4.1.0.tgz
 ARG SDC_USER=sdc
  
 USER root
@@ -12,7 +13,7 @@ RUN apk --no-cache add bash \
     libstdc++ \
     sed
 	
-RUN apk add --update bash libressl curl fping libcap && rm -rf /var/cache/apk/* && mkdir /opt 
+RUN mkdir /opt 
 	
 	
 # add streamsets user
