@@ -31,10 +31,7 @@ RUN mkdir -p ${DATA_VOLUME}
 RUN chown -R "${SDC_USER}:${SDC_USER}" "${DATA_VOLUME}" 
 
 
-ADD root /
-RUN chmod +x /start.sh
-
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/bin/true"]
 
 
 
