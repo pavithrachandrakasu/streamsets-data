@@ -13,7 +13,7 @@ RUN apk --no-cache add bash \
     libstdc++ \
     sed
 	
-RUN mkdir /opt 
+#RUN mkdir /opt 
 	
 	
 # add streamsets user
