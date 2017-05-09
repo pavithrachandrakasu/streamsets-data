@@ -22,7 +22,7 @@ RUN addgroup -S ${SDC_USER} && \
     adduser -S ${SDC_USER} ${SDC_USER}
 	
 
-ENV DATA_VOLUME=/usr/share/streamsets/data
+ARG DATA_VOLUME=/usr/share/streamsets/data
 
 RUN mkdir -p ${DATA_VOLUME}
 
